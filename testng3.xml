@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	
+  <test name="Test1">
+	  <!-- run test cases with group name set as Smoke-->
+	  <groups>
+		  <run>
+			  <include name="Smoke"></include>
+		  </run>
+	  </groups>
+	  <!-- runs the test cases only in the test2 package-->
+	 <classes>
+		 <class name="test.first"></class>
+		 <class name="test.car"></class>
+		 <class name="test.loan"></class>
+		 <class name="test.Bike"></class>
+	 </classes>
+  </test>
+  
+</suite> <!-- Suite -->

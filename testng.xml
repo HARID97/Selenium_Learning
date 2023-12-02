@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+  
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="test.first"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="Test2">
+	  <classes>
+		  <class name ="test.loan">
+			  <methods>
+				  <!-- excludes test3 method from loan class-->
+				  <exclude name="loan3"></exclude>
+			  </methods>
+		  </class>
+	  </classes>
+  </test>
+  
+  <test name="Test3">
+	  <classes>
+		  <class name="test.car">
+			  <methods>
+				  <!-- includes only the car1 test-->
+				  <include name="car1"></include>
+			  </methods>
+		  </class>
+	  </classes>
+  </test>
+  
+  <test name="Test4">
+	  <classes>
+		  <class name="test.Bike">
+			  
+			  <!-- includes or excludes the methods starting with Bike-->
+			  <methods>
+				  <include name="Bike.*"></include>
+			  </methods>
+		  </class>
+	  </classes>
+	  
+  </test>
+  
+</suite> <!-- Suite -->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-30T23:05:56 IST" name="Loan Department" finished-at="2023-11-30T23:05:57 IST" duration-ms="33">
+    <groups>
+      <group name="Smoke">
+        <method signature="Bike.Bike1()[pri:0, instance:test.Bike@6f46426d]" name="Bike1" class="test.Bike"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-11-30T23:05:56 IST" name="Test1" finished-at="2023-11-30T23:05:57 IST" duration-ms="33">
+      <class name="test.Bike">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.Bike@6f46426d]" started-at="2023-11-30T23:05:56 IST" name="beforeSuite" finished-at="2023-11-30T23:05:56 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Bike@6f46426d]" started-at="2023-11-30T23:05:57 IST" name="beforeClass" finished-at="2023-11-30T23:05:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Bike1()[pri:0, instance:test.Bike@6f46426d]" started-at="2023-11-30T23:05:57 IST" name="Bike1" finished-at="2023-11-30T23:05:57 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bike1 -->
+        <test-method signature="Bike2()[pri:0, instance:test.Bike@6f46426d]" started-at="2023-11-30T23:05:57 IST" name="Bike2" finished-at="2023-11-30T23:05:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bike2 -->
+        <test-method signature="Bike3()[pri:0, instance:test.Bike@6f46426d]" started-at="2023-11-30T23:05:57 IST" name="Bike3" finished-at="2023-11-30T23:05:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bike3 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.Bike@6f46426d]" started-at="2023-11-30T23:05:57 IST" name="afterClass" finished-at="2023-11-30T23:05:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.Bike@6f46426d]" started-at="2023-11-30T23:05:57 IST" name="afterSuite" finished-at="2023-11-30T23:05:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test.Bike -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Loan Department -->
+</testng-results>

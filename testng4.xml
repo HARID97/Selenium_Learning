@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<!-- passing global parameter to test-->
+	<parameter name="URL" value="qaclickacademy.com"></parameter>
+	<parameter name="Username" value="Hari"></parameter>
+	
+  <test name="Test1">
+	  <!-- passing local parameter which is overriden by the local test folder-->
+	  <parameter name="URL" value="Sion-Alive.com"></parameter>
+	 <classes>
+		 <class name="test2.train"></class>
+	</classes>
+  </test>
+  
+  <test name="Test2">
+	  <classes>
+		  <class name="test2.plane"></class>
+	  </classes>
+  </test>
+  
+</suite> <!-- Suite -->
