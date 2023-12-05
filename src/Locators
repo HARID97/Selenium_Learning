@@ -1,0 +1,9 @@
+CSS Selectors
+
+1)Id -> #idname
+2)Class -> .classname
+3)attribute -> tag[attribute = 'value']
+4)tag and ID -> tag#idname
+5)tag and class -> tag.classname
+6)tag,id and attribute -> tag#idname[attribute=value]
+7)tag,class and attribute -> tag.idname[attribute=value]
