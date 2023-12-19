@@ -12,8 +12,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.*;
 
 import PageObjects.CartPage;
+import PageObjects.OrdersPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AbstractComponents {
@@ -29,11 +31,20 @@ public class AbstractComponents {
 	
 	@FindBy(xpath="//button[@routerlink='/dashboard/cart']")
 	WebElement cart_element;
+	
+	@FindBy(xpath="//button[@routerlink='/dashboard/myorders']")
+	WebElement order_element;
 
 	public void waitForElementToAppear(By findBy) {
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+	}
+	
+	public void waitForElementToAppear(WebElement element) {
+		
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
 	public void waitForElementToDisappear(WebElement element) {
@@ -48,5 +59,11 @@ public class AbstractComponents {
 		CartPage cp = new CartPage(driver);
 		return cp;
 		
+	}
+	
+	public OrdersPage goToOrdersPage() {
+		order_element.click();
+		OrdersPage op = new OrdersPage(driver);
+		return op;
 	}
 }

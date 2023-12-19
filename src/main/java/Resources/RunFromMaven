@@ -1,0 +1,7 @@
+1. mvn test -PProfilename > to run tests from command prompt using profiles
+2. mvn test -Dbrowser=FireFox -> to run from a specific browser from command(browser is a global variable already defined)
+3. mvn test -PProfilename -Dbrowser=FireFox -> to run the profile specified in firefox browser.
+
+
+
+1. To start Jenkins : java -jar jenkins.war -httpPort-8080

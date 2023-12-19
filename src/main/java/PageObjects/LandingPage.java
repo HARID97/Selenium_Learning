@@ -37,8 +37,14 @@ public class LandingPage extends AbstractComponents{
 	@FindBy(css="//div[contains(@class,'mb-3')]")
 	List<WebElement> elements;
 	
+	@FindBy(xpath="//div[@id='toast-container']")
+	WebElement error_message;
+	
+	
+	/*we are giving return type as ProductCatalogue because we know that after logging into application
+	 * the next page is productcatalogue page and we have to use the methods of productcatalogue class.
+	 */
 	public ProductCatalogue loginToApplication(String username,String password) {
-		
 		usernameelem.sendKeys(username);
 		passwordelem.sendKeys(password);
 		loginelem.click();
@@ -48,5 +54,11 @@ public class LandingPage extends AbstractComponents{
 	
 	public void loginTo() {
 		driver.get("https://rahulshettyacademy.com/client");
+	}
+	
+	public String getErrorMessage() {
+		waitForElementToAppear(error_message);
+		System.out.println(error_message.getText());
+		return error_message.getText();
 	}
 }
